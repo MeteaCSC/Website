@@ -1,0 +1,16 @@
+{
+  "name": "metea-web",
+  "version": "1.0.0",
+  "description": "The Metea Valley Website!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MVCSC",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "marked": "^13.0.2"
+  }
+}
