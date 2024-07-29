@@ -38,7 +38,7 @@ main > h1{
 }
 
 footer{
-    position:absolute;
+    position:fixed;
     border-top:2px solid #100f11;
     left: 0;
     bottom: 0;

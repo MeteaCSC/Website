@@ -12,11 +12,8 @@ No! Its perfectly fine and we understand that there are all sorts of activies go
 Currently we don't, but we would be happy to set something up if people are interested.
 
 # Club Info
-#### Sponsors:
-Mr. Fox, Mr. Jalkut 
+Sponsors: Mr. Fox, Mr. Jalkut 
 
-#### Meeting Time:
-Thursdays 2:30 - 3:30 PM
+Meeting Time: Thursdays 2:30 - 3:30 PM
 
-#### Meeting Locations:
-Room D109 - Main room
+Meeting Locations: Room D109 - Main room
