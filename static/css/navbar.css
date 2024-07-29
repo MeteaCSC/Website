@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#menu {
+    background-color: #232025;
+    font-size: medium;
+}
+
+#menu p {
+    float: left;
+    color: red;
+    padding: 1rem;
+    margin: 0;
+}
+
+a:link {
+    color: #daa520;
+    text-decoration: none;
+}
+  
+a:visited {
+    color: #daa520;
+}
+  
+a:hover {
+    color: #cfbb88;
+}
+  
+a:active {
+    color: #775b13;
+} 
+
+#menu ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+    padding: 1rem;
+}
+
+#menu li {
+    padding-left: .5rem;
+    padding-right: .5rem;
+}

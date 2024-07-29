@@ -1,7 +1,7 @@
 /* Linter anyone? */
 
 const marked = require('marked')
-const path = require('path')
+const path = require('node:path')
 const express = require('express')
 const fs = require('node:fs');
 
