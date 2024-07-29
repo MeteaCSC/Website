@@ -1,18 +1,22 @@
 body {
     margin: 0;
+    font-family: Fira;
     padding: 0;
 }
-
+@font-face {
+    font-family: 'Fira';
+    src: url('fonts/FiraCode-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+  }
 #menu {
-    background-color: #232025;
-    font-size: medium;
+    background-image:linear-gradient(45deg, #232025 30%, #ffffff44 100%);
+    border-bottom:2px solid #100f11;
 }
 
-#menu p {
-    float: left;
-    color: red;
-    padding: 1rem;
-    margin: 0;
+#menu h1{
+    text-align: center;
+    color:#e6e6e7;
 }
 
 a:link {
