@@ -1,50 +1,34 @@
-body {
-    margin: 0;
-    font-family: Fira;
-    padding: 0;
-}
-@font-face {
-    font-family: 'Fira';
-    src: url('fonts/FiraCode-Regular.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-  }
 #menu {
+    padding: 1rem;
     background-image:linear-gradient(45deg, #232025 30%, #ffffff44 100%);
     border-bottom:2px solid #100f11;
 }
 
-#menu h1{
-    text-align: center;
-    color:#e6e6e7;
-}
-
-a:link {
+#menu a {
     color: #daa520;
     text-decoration: none;
 }
-  
-a:visited {
-    color: #daa520;
-}
-  
-a:hover {
+#menu a:hover {
     color: #cfbb88;
 }
-  
-a:active {
-    color: #775b13;
-} 
 
 #menu ul {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     list-style-type: none;
     margin: 0;
-    padding: 1rem;
 }
-
 #menu li {
     padding-left: .5rem;
     padding-right: .5rem;
+}
+
+#menu img {
+    float:left;
+    width: 100%;
+    height: auto;
+    max-width: 8.5rem;
+    padding: 0;
+    margin: 0;
 }

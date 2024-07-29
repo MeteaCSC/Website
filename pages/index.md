@@ -1,8 +1,8 @@
 # What is CSC?
-At the Metea Valley Computer Science Club we do all sorts of things related to computers! Our club has three major sections: Competitive which does things like ACSL, Beginner where you pratice things like Python, and Niche which is whatever interest you! 
+Metea Valley Computer Science Club is about all things related to computers! Our club has three major sections: Competitive which does things like ACSL, Beginner where you pratice things like Python, and Niche which is about whatever interest you! 
 
 # FQA
-### Q: Is there any requirements to join?
+### Q: Are there any requirements to join?
 Not at all! Beginners are welcome!  Though for some sections it is strongly recommened that you are familiar with a programming language.
 
 ### Q: Do I need to commit to every meeting?
