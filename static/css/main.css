@@ -1,5 +1,6 @@
 body {
     background-color: #353337;
+    min-height: 100vh;
     font-family: Fira;
     display: grid;
     padding: 0;

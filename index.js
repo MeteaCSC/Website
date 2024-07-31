@@ -25,8 +25,8 @@ app.get('/', (req, res) => {
 })
 /* ---- */  
 
-app.get('/resources', (req, res) => {
-  
+app.get('/calendar', (req, res) => {
+  res.render('calendar', {})
 })
 
 let server = app.listen(7777, () => {
