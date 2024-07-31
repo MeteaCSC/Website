@@ -25,6 +25,10 @@ app.get('/', (req, res) => {
 })
 /* ---- */  
 
+app.get('/resources', (req, res) => {
+  
+})
+
 let server = app.listen(7777, () => {
   console.log('Started express server on port ' + server.address().port)
 })

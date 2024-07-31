@@ -5,6 +5,18 @@ body {
     padding: 0;
     margin: 0;
 }
+
+#hero {
+    background: red;
+    text-align: center;
+    width: auto;
+    height: 50vh;
+}
+
+#hero p {
+    padding-top: 10%;
+}
+
 @font-face {
     font-family: 'Fira';
     src: url('fonts/FiraCode-Regular.woff2') format('woff2');
@@ -28,15 +40,3 @@ main {
 main > h1{
     border-bottom:2px solid #daa520;
 }
-
-/* see footer.css
-footer {
-    position:fixed;
-    border-top:2px solid #100f11;
-    left: 0;
-    bottom: 0;
-    right:0;
-    color:#daa520;
-    background-color: #232025;
-    text-align: center;
-} */

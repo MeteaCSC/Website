@@ -1,11 +1,12 @@
 footer {
+    font-size: smaller;
     color: #daa520;
     background-color: #232025;
     text-align: center;
     width: 100%;
-    position: fixed;
+    /*position: fixed;
     left: 0;
-    bottom: 0;
+    bottom: 0;*/
 }
 
 footer a {
