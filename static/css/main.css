@@ -5,11 +5,11 @@ body {
     display: grid;
     padding: 0;
     margin: 0;
-    padding-bottom: 100px;
 }
 
 #hero {
-    background: red;
+    background-image: url("bg.jpg");
+    background-size:100%;
     text-align: center;
     width: auto;
     height: 50vh;
