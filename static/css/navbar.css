@@ -10,6 +10,7 @@
 #menu a {
     color: #daa520;
     text-decoration: none;
+    width: fit-content;
 }
 #menu a:hover {
     color: #cfbb88;

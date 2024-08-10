@@ -1,5 +1,4 @@
-main {
-    display: grid;
-    grid-template-rows: 4vh auto auto auto;
-    grid-template-columns: auto auto auto auto auto auto auto;
+table {
+    border: 2px solid;
+    width: 100%;
 }
