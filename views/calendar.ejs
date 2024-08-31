@@ -2,10 +2,29 @@
 <html lang="en">
     <head>
         <%- include('partials/head'); %>
+        <link rel="stylesheet" href="/css/calendar.css">
     </head>
     <body>
         <%- include('partials/header'); %>
         <div id="hero">
+        </div>
+
+        <div class="calendar">
+            <header>
+                <p>Year / MONTH</p>
+            </header>
+            <table>
+                <tr>
+                    <th>Sunday</th>
+                    <th>Monday</th>
+                    <th>Tuseday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Staturday</th>
+                </tr>
+                <%- data %>
+            </table>
         </div>
 
         <%- include('partials/footer'); %>

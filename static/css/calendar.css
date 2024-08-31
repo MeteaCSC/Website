@@ -1,4 +1,10 @@
-table {
-    border: 2px solid;
-    width: 100%;
+.calendar {
+    border-style: solid;
+    border-width: 1 rem;
+    border-color: black;
+    width: auto;
+}
+
+.calendar table {
+    table-layout: fixed;
 }
