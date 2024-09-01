@@ -1,4 +1,5 @@
 import express, { Express, Request, Response } from "express";
+import gen from "./calendar";
 
 const marked = require("marked");
 const path = require("node:path");
@@ -26,7 +27,7 @@ app.get("/", (req, res) => {
 
 app.get("/calendar", (req, res) => {
   res.render("calendar", {
-    data: "Hi",
+    data: gen(new Date()),
   });
 });
 

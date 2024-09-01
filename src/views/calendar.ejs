@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <%- include('partials/head'); %>
-        <link rel="stylesheet" href="/css/calendar.css">
-    </head>
-    <body>
-        <%- include('partials/header'); %>
-        <div id="hero">
-        </div>
 
-        <div class="calendar">
-            <header>
-                <p>Year / MONTH</p>
-            </header>
-            <table>
-                <tr>
-                    <th>Sunday</th>
-                    <th>Monday</th>
-                    <th>Tuseday</th>
-                    <th>Wednesday</th>
-                    <th>Thursday</th>
-                    <th>Friday</th>
-                    <th>Staturday</th>
-                </tr>
-                <%- data %>
-            </table>
-        </div>
+<head>
+  <%- include('partials/head'); %>
+  <link rel="stylesheet" href="/css/calendar.css">
+</head>
 
-        <%- include('partials/footer'); %>
-    </body>
+<body>
+  <%- include('partials/header'); %>
+  <div id="hero">
+  </div>
+  <div class="calendar">
+    <header>
+      <h3>Year / MONTH</h3>
+    </header>
+    <div id="calendar-dates">
+      <table>
+        <tr>
+          <th>Sunday</th>
+          <th>Monday</th>
+          <th>Tuseday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+          <th>Staturday</th>
+        </tr>
+        <%- data %>
+      </table>
+    </div>
+  </div>
+  <%- include('partials/footer'); %>
+</body>
+
 </html>

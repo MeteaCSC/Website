@@ -21,7 +21,24 @@ Then to start the express server on port 7777 run:
 make debug
 ```
 
+If you are windows just manualy type the commands found in `Makefile`
+
 You can now go to http://localhost:7777 in your favorite web brower to view the website
+
+## Project Structure
+
+```bash
+
+── src                 # Main project folder
+   ├── pages           # Markdown resources
+   ├── static          # Styling files
+   │   ├── css
+   │   │   └── fonts   # Fonts
+   │   └── png         # Image resources
+   │       └── favicon-32x32.png
+   └── views           # EJS
+       └── partials    # Contains site wide resources
+```
 
 ## Adding new resources
 

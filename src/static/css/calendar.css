@@ -1,10 +1,40 @@
 .calendar {
-    border-style: solid;
-    border-width: 1 rem;
-    border-color: black;
+    background-color: white;
     width: auto;
+    margin: 0;
+    height: 90vh;
+    vertical-align: top;
+    margin: 0;
 }
 
-.calendar table {
-    table-layout: fixed;
+.calendar header {
+    height: 5%;
+}
+
+#calendar-dates {
+    height: 95%;
+}
+
+#calendar-dates table, td, th {
+    border-collapse: collapse;
+    border-style: solid;
+    border-color: black;
+}
+
+#calendar-dates p {
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+
+#calendar-dates td {
+    height: 19%;
+}
+
+#calendar-dates table {
+    height: 100%;
+}
+
+#calendar-dates td, th {
+    width: 14.2vw;
 }
