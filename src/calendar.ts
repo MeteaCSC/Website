@@ -22,7 +22,6 @@ interface EventBlock {
   timeStart: number;
   timeEnd: number;
 }
-
 `
 <td id="${1}">
   <p class="dateDisplay">${1}</p>
