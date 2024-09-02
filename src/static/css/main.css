@@ -14,15 +14,22 @@ body {
 }
 
 #hero {
+    font-family: Arial, Helvetica, sans-serif;
     background-image: url("/png/bg.jpg");
     background-size:100%;
-    text-align: center;
+    align-content: center;
+    padding-left: 10vw;
     width: auto;
-    height: 50vh;
+    height: 60vh;
 }
 
-#hero p {
-    padding-top: 10%;
+#title h1 {
+    color: #e6e6e7;
+    font-size: 80px;
+}
+
+#title {
+    background-color: black;
 }
 
 @font-face {
@@ -33,12 +40,17 @@ body {
 }
 
 main {
-    font-family: Fira;
+    display: flex;
+    font-family: Arial;
     color: #e6e6e7;
     padding-left: 10%;
     padding-right: 10%;
 }
 
-main > h1{
+h1{
     border-bottom:2px solid #daa520;
+}
+
+a {
+    color: #da5b20;
 }

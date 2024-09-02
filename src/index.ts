@@ -20,13 +20,16 @@ function load_md(file: String) {
 
 app.get("/", (req, res) => {
   res.render("index", {
-    data: load_md("index.md"),
+    titleName: "Home",
+    aboutus: load_md("index.md"),
+    faq: load_md("faq.md"),
   });
 });
 /* ---- */
 
 app.get("/calendar", (req, res) => {
   res.render("calendar", {
+    titleName: "Calendar",
     data: gen(new Date()),
   });
 });

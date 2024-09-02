@@ -1,4 +1,5 @@
 #navbar {
+    border-bottom:2px solid #100f11;
     background-color: #232025;
     position: sticky;
     height: 3.5rem;
@@ -48,7 +49,7 @@
     z-index: 0;
 }
 
-#about {
+#jump {
     position: absolute;
     top: 30%;
     right: 0;
