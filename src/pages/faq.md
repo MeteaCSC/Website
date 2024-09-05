@@ -1,4 +1,4 @@
-# FQA
+# FAQ
 
 ### Q: Are there any requirements to join?
 
