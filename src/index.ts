@@ -20,7 +20,7 @@ function load_md(file: String) {
 
 app.get("/", (req, res) => {
   res.render("index", {
-    titleName: "Home",
+    titleName: "Home ",
     hook: load_md("hook.md"),
     aboutus: load_md("index.md"),
     faq: load_md("faq.md"),
@@ -30,20 +30,20 @@ app.get("/", (req, res) => {
 
 app.get("/calendar", (req, res) => {
   res.render("calendar", {
-    titleName: "Calendar",
+    titleName: "Calendar ",
     data: gen(new Date()),
   });
 });
 
 app.get("/resources", (req, res) => {
   res.render("placesholder.ejs", {
-    titleName: "Resources",
+    titleName: "Resources ",
   });
 });
 
 app.get("/leaderboards", (req, res) => {
   res.render("placesholder.ejs", {
-    titleName: "Leaderboards",
+    titleName: "Leaderboards ",
   });
 });
 
