@@ -14,22 +14,28 @@ body {
 }
 
 #hero {
+    display: flex;
+    justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
     background-image: url("/png/bg.jpg");
-    background-size:100%;
+    background-size: 100%;
     align-content: center;
-    padding-left: 10vw;
     width: auto;
-    height: 60vh;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    /*height: 60vh;*/
 }
 
+/*#e6e6e7*/
 #title h1 {
+    background-color: black;
     color: #e6e6e7;
     font-size: 80px;
 }
 
 #title {
-    background-color: black;
+    height: fit-content;
+    width: fit-content;
 }
 
 @font-face {
@@ -47,8 +53,8 @@ main {
     padding-right: 10%;
 }
 
-h1{
-    border-bottom:2px solid #daa520;
+h1 {
+    border-bottom: 2px solid #daa520;
 }
 
 a {

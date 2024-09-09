@@ -3,33 +3,34 @@
 
 <head>
   <%- include('partials/head'); %>
-  <link rel="stylesheet" href="/css/calendar.css">
+    <link rel="stylesheet" href="/css/calendar.css">
 </head>
 
 <body>
   <%- include('partials/navbar'); %>
-  <div id="hero">
-  </div>
-  <div class="calendar">
-    <header>
-      <h3>2024 / September</h3>
-    </header>
-    <div id="calendar-dates">
-      <table>
-        <tr>
-          <th>Sunday</th>
-          <th>Monday</th>
-          <th>Tuseday</th>
-          <th>Wednesday</th>
-          <th>Thursday</th>
-          <th>Friday</th>
-          <th>Staturday</th>
-        </tr>
-        <%- data %>
-      </table>
+    <div id="hero">
+      <h1>D109 - Thursdays from 2:25-3:30</h1>
     </div>
-  </div>
-  <%- include('partials/footer'); %>
+    <div class="calendar">
+      <header>
+        <h3>2024 / September</h3>
+      </header>
+      <div id="calendar-dates">
+        <table>
+          <tr>
+            <th>Sunday</th>
+            <th>Monday</th>
+            <th>Tuseday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Staturday</th>
+          </tr>
+          <%- data %>
+        </table>
+      </div>
+    </div>
+    <%- include('partials/footer'); %>
 </body>
 
 </html>

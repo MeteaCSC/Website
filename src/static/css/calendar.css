@@ -14,7 +14,10 @@
     height: 95%;
 }
 
-#calendar-dates table, td, th {
+#calendar-dates table,
+td,
+th {
+    padding: 0;
     border-collapse: collapse;
     border-style: solid;
     border-color: black;
@@ -28,12 +31,19 @@
 
 #calendar-dates td {
     height: 19%;
+    background-color: #e6e6e7;
 }
 
 #calendar-dates table {
     height: 100%;
+    background: #e6e6e7;
 }
 
-#calendar-dates td, th {
+#calendar-dates th {
+    background-color: #daa520;
+}
+
+#calendar-dates td,
+th {
     width: 14.2vw;
 }

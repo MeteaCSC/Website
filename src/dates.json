@@ -1,3 +1,14 @@
 [
-    {"date": "2024-09-26", "name": "First Meeting", "timeStart": 0, "timeEnd": 1}
+    {
+        "date": "2024-09-26",
+        "name": "First Meeting",
+        "timeStart": 0,
+        "timeEnd": 1
+    },
+    {
+        "date": "2024-09-12",
+        "name": "Activity Fair",
+        "timeStart": 0,
+        "timeEnd": 1
+    }
 ]
