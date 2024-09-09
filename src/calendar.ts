@@ -62,7 +62,7 @@ export default function gen(calDate: Date): string {
 
 function getEvents(day: Date): EventBlock[] {
   let buffer: string = fs.readFileSync(
-    path.join(__dirname, "dates.json"),
+    path.join(__dirname, "../dates.json"),
     "utf8"
   );
   let events: EventBlock[] = JSON.parse(buffer);

@@ -7,14 +7,17 @@ const fs = require("node:fs");
 
 const app = express();
 
-app.use(express.static(path.join(__dirname, "static")));
+app.use(express.static(path.join(__dirname, "../static")));
 
 app.set("view engine", "ejs");
-app.set("views", path.join(__dirname, "views"));
+app.set("views", path.join(__dirname, "../src/views"));
 
 /* loader? */
 function load_md(file: String) {
-  let data = fs.readFileSync(path.join(__dirname, "pages/", file), "utf8");
+  let data = fs.readFileSync(
+    path.join(__dirname, "../src/pages/", file),
+    "utf8"
+  );
   return marked.parse(data);
 }
 
