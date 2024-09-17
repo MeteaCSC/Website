@@ -1,19 +1,16 @@
 import express, { Express, Request, Response } from "express";
-import gen from "./calendar";
-
-const marked = require("marked");
-const path = require("node:path");
-const fs = require("node:fs");
+import marked, { Marked } from "marked";
+import { gen } from "./calendar";
+import fs from "fs";
+import path from "path";
 
 const app = express();
-
 app.use(express.static(path.join(__dirname, "../static")));
-
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "../src/views"));
 
 /* loader? */
-function load_md(file: String) {
+function load_md(file: string) {
   let data = fs.readFileSync(
     path.join(__dirname, "../src/pages/", file),
     "utf8"
@@ -22,12 +19,9 @@ function load_md(file: String) {
 }
 
 /*WebGl Loader*/
-
-
 app.get("/", (req, res) => {
   res.render("index", {
     titleName: "Home ",
-    hook: load_md("hook.md"),
     aboutus: load_md("index.md"),
     faq: load_md("faq.md"),
   });

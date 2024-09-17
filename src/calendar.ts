@@ -1,5 +1,5 @@
-import * as fs from "fs";
-import * as path from "path";
+import fs from "fs";
+import path from "path";
 
 const months = [
   "January",
@@ -31,7 +31,7 @@ interface EventBlock {
 </td>
 `;
 
-export default function gen(calDate: Date): string {
+function gen(calDate: Date): string {
   const year = calDate.getFullYear();
   const month = calDate.getMonth();
 
@@ -75,3 +75,5 @@ function getEvents(day: Date): EventBlock[] {
   }
   return todayEvents;
 }
+
+export { gen };

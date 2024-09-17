@@ -1,5 +1,5 @@
-import {initBuffers} from "./init-buffers.js";
-import {drawScene} from "./draw-scene.js";
+import { initBuffers } from "./init-buffers.js";
+import { drawScene } from "./draw-scene.js";
 
 let ry = 0
 let rx = 0
@@ -10,9 +10,7 @@ let deltaTime = 0;
 
 main();
 
-//
-// start here
-//
+// Start Here
 function main() {
     const canvas = document.querySelector("#gl");
     let mouseDown = false;
@@ -20,13 +18,11 @@ function main() {
     let mouseY;
     let x, y, z;
     let dx, dy, dz;
-    let horizVelocity = 0;
-    let vertVelocity = 0;
+    let horizVelocity = 0.01;
+    let vertVelocity = 0.01;
 
     canvas.addEventListener('mousemove', function (evt) {
         let mousePos = getMousePosition(canvas, evt);
-
-
         mouseX = mousePos.x
         mouseY = mousePos.y
 
@@ -35,9 +31,8 @@ function main() {
             let mx = (2.0 * mouseX) / 500 - 1.0;
             let my = 1.0 - (2.0 * mouseY) / 500;
 
-            horizVelocity = (y - mx) / 10
-            vertVelocity = (x - my) / 10
-
+            horizVelocity = (x - mx) / 10
+            vertVelocity = (y - my) / 10
         }
     }, false);
 
@@ -85,31 +80,31 @@ function main() {
     // Vertex shader program
 
     const vsSource = `
-  attribute vec4 aVertexPosition;
-  attribute vec2 aTextureCoord;
+        attribute vec4 aVertexPosition;
+        attribute vec2 aTextureCoord;
 
-  uniform mat4 uModelViewMatrix;
-  uniform mat4 uProjectionMatrix;
+        uniform mat4 uModelViewMatrix;
+        uniform mat4 uProjectionMatrix;
 
-  varying highp vec2 vTextureCoord;
+        varying highp vec2 vTextureCoord;
 
-  void main(void) {
-    gl_Position = uProjectionMatrix * uModelViewMatrix * aVertexPosition;
-    vTextureCoord = aTextureCoord;
-  }
-`;
+        void main(void) {
+            gl_Position = uProjectionMatrix * uModelViewMatrix * aVertexPosition;
+            vTextureCoord = aTextureCoord;
+        }
+    `;
 
     // Fragment shader program
 
     const fsSource = `
-  varying highp vec2 vTextureCoord;
+        varying highp vec2 vTextureCoord;
 
-  uniform sampler2D uSampler;
+        uniform sampler2D uSampler;
 
-  void main(void) {
-    gl_FragColor = texture2D(uSampler, vTextureCoord);
-  }
-`;
+        void main(void) {
+            gl_FragColor = texture2D(uSampler, vTextureCoord);
+        }
+    `;
 
     // Initialize a shader program; this is where all the lighting
     // for the vertices and so forth is established.
@@ -158,24 +153,23 @@ function main() {
         vertVelocity = parseFloat(vertVelocity.toFixed(2))
         console.log(horizVelocity)
 
-        if (horizVelocity < 0) {
+        /*if (horizVelocity < 0) {
             horizVelocity += .01
-        } else if (horizVelocity > 0){
+        } else if (horizVelocity > 0) {
             horizVelocity -= .01
         }
         if (vertVelocity < 0) {
             vertVelocity += .01
         } else if (vertVelocity > 0) {
             vertVelocity -= .01
-        }
+        }*/
 
         // x = (2.0 * mouseX) / 500 - 1.0;
         // y = 1.0 - (2.0 * mouseY) / 500;
         // z = 1.0;
 
-
         rx += vertVelocity * -1
-        ry +=  horizVelocity
+        ry += horizVelocity
         rz = 0
         i += 1
 

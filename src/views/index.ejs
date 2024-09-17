@@ -7,31 +7,27 @@
 
 <body>
   <%- include('partials/navbar'); %>
-  <div id="hero">
-    <div id="title">
-      <h1>Welcome to <span style="color: #daa520">Metea CSC</span></h1>
+    <div id="hero">
+      <div id="title">
+        <h1>Welcome to <span style="color: #daa520">Metea CSC</span></h1>
+      </div>
       <canvas id="gl" width="500" height="500"></canvas>
-
     </div>
-  </div>
 
-  <main>
-    <div style="margin-right: 3rem;">
-      <%- aboutus %>
-    </div>
-    <div>
-      <%- faq %>
-    </div>
-  </main>
+    <main>
+      <div style="margin-right: 3rem;">
+        <%- aboutus %>
+      </div>
+      <div>
+        <%- faq %>
+      </div>
+    </main>
 
-  <%- include('partials/footer'); %>
+    <%- include('partials/footer'); %>
 </body>
 
 </html>
-<script
-        src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.8.1/gl-matrix-min.js"
-        integrity="sha512-zhHQR0/H5SEBL3Wn6yYSaTTZej12z0hVZKOv3TwCUXT1z5qeqGcXJLLrbERYRScEDDpYIJhPC1fk31gqR783iQ=="
-        crossorigin="anonymous"
-        defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.8.1/gl-matrix-min.js"
+  integrity="sha512-zhHQR0/H5SEBL3Wn6yYSaTTZej12z0hVZKOv3TwCUXT1z5qeqGcXJLLrbERYRScEDDpYIJhPC1fk31gqR783iQ=="
+  crossorigin="anonymous" defer></script>
 <script type="module" src="scripts/webgl.js"></script>
-
