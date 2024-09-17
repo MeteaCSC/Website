@@ -65,6 +65,7 @@ function getEvents(day: Date): EventBlock[] {
     path.join(__dirname, "../dates.json"),
     "utf8"
   );
+
   let events: EventBlock[] = JSON.parse(buffer);
   let todayEvents: EventBlock[] = new Array();
   for (let i = 0; i < events.length; i++) {

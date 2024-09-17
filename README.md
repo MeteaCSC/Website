@@ -34,7 +34,7 @@ You can now go to http://localhost:7777 in your favorite web brower to view the 
    ├── static          # Styling files
    │   ├── css
    │   │   └── fonts   # Fonts
-   │   └── png         # Image resources
+   │   └── images         # Image resources
    │       └── favicon-32x32.png
    └── views           # EJS
        └── partials    # Contains site wide resources
