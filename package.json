@@ -2,11 +2,11 @@
   "name": "metea-web",
   "version": "1.0.0",
   "description": "The Metea Valley Website!",
-  "main": "src/index.ts",
+  "main": "src/app.ts",
   "scripts": {
     "build": "npx tsc",
     "start": "node build/index.js",
-    "debug": "npx ts-node src/index.ts",
+    "debug": "npx ts-node src/app.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "MVCSC",
