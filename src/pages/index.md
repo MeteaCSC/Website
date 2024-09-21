@@ -4,8 +4,17 @@ The Metea Valley Computer Science Club is about all things related to computers!
 
 # Club Info
 
-Sponsors: Mr. Fox and Mr. Jalkut
+### Contact
 
-Meeting Time: **Thursdays 2:30 - 3:30 PM**
+>Email: mvcomputerscience09@gmail.com
 
-Meeting Locations: Room D109 - Main room
+>Instagram: @mvcomputerscience
+
+>Sponsors: Mr. Fox and Mr. Jalkut
+
+### Meetings
+
+>Time: **Thursdays 2:30 - 3:30 PM**
+
+>Locations: Room D109 - Main room
+

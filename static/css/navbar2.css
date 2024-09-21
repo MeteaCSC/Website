@@ -1,5 +1,5 @@
 #navbar {
-    border-bottom:2px solid #100f11;
+    border-bottom: 2px solid #100f11;
     background-color: #232025;
     position: sticky;
     height: 3.5rem;
@@ -7,9 +7,16 @@
     top: 0;
 }
 
+#navbar nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
 #navbar ul {
-    position: absolute;
-    width: 100%;
     list-style-type: none;
     display: flex;
     justify-content: center;
@@ -31,27 +38,10 @@
     color: #cfbb88;
 }
 
-#logo {
-    position: absolute;
-    float: left;
-    align-content: center;
-    margin-left: 1rem;
-    margin-top: .75rem;
-}
-
 #logo a {
-    position: absolute;
-    height: fit-content;
     z-index: 1;
 }
 
 #logo img {
     z-index: 0;
-}
-
-#jump {
-    position: absolute;
-    top: 30%;
-    right: 0;
-    margin-right: 1rem;
 }
