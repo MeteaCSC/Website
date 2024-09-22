@@ -7,7 +7,12 @@
 }
 
 .calendar header {
-    height: 5%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    color: #e6e6e7
 }
 
 #calendar-dates {
@@ -31,6 +36,7 @@ th {
 
 #calendar-dates td {
     height: 19%;
+    padding: 10px;
     background-color: #e6e6e7;
 }
 

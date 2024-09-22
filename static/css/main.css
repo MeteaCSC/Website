@@ -25,6 +25,7 @@ body {
     width: auto;
     padding-top: 8rem;
     padding-bottom: 8rem;
+    background-repeat: no-repeat;
     /*height: 60vh;*/
 }
 

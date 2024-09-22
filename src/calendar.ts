@@ -23,7 +23,7 @@ interface EventBlock {
   timeEnd: number;
 }
 `
-<td id="${1}">
+<td id="${1}" valign="top">
   <p class="dateDisplay">${1}</p>
   <ul>
     <li>${"SomeEvent"}</li>
@@ -45,7 +45,7 @@ function gen(calDate: Date): string {
   }
   // Create dates with id that can populate events later
   for (let i = 1; i < lastDay + 1; i++) {
-    genHTML += `<td id="${i}"><p>${i}</p><ul>`;
+    genHTML += `<td id="${i}" valign="top"><p>${i}</p><ul>`;
     let events: EventBlock[] = getEvents(new Date(year, month, i));
     for (let j = 0; j < events.length; j++) {
       genHTML += `<li>${events[j].name}</li>`;
