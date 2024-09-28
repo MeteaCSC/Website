@@ -38,7 +38,7 @@ app.get("/calendar", (req, res) => {
 app.get("/resources", (req, res) => {
   res.render("resources.ejs", {
     titleName: "Resources ",
-    resources: load_md("resources.md"), 
+    resources: load_md("resources.md"),
   });
 });
 
