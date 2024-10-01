@@ -49,6 +49,20 @@ body {
     font-style: normal;
 }
 
+/*@media all and (max-width: 699px) and (min-width: 520px),
+(min-width: 1151px) {
+    body {
+        font-size: medium;
+    }
+}*/
+
+@media screen and (width <=1000px) {
+    main {
+        flex-wrap: wrap;
+        font-size: large;
+    }
+}
+
 main {
     display: flex;
     font-family: Arial;
