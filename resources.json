@@ -1,5 +1,8 @@
 [
     {
-        "url": "https://meteacsc.com"
+        "groupName": "Personal Projects",
+        "urls": [
+            "https://meteacsc.com/"
+        ]
     }
 ]

@@ -31,6 +31,14 @@ interface EventBlock {
 </td>
 `;
 
+function setDateHeader() {
+  let today = new Date();
+  let header = document.getElementById("yearmonth");
+  let currentMonthYear = `${today.getFullYear} / ${today.getMonth}`;
+  let currentHeader = document.createTextNode(currentMonthYear);
+  header?.appendChild(currentHeader);
+}
+
 function gen(calDate: Date): string {
   const year = calDate.getFullYear();
   const month = calDate.getMonth();
@@ -69,7 +77,8 @@ function getEvents(day: Date): EventBlock[] {
   let events: EventBlock[] = JSON.parse(buffer);
   let todayEvents: EventBlock[] = new Array();
   for (let i = 0; i < events.length; i++) {
-    if (new Date(events[i].date).getUTCDate() == day.getUTCDate()) {
+    let calendarDate = new Date(events[i].date);
+    if (calendarDate.getUTCDate() == day.getUTCDate() && calendarDate.getMonth() == day.getMonth()) {
       todayEvents.push(events[i]);
     }
   }

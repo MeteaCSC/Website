@@ -10,5 +10,35 @@
         "name": "Activity Fair",
         "timeStart": 0,
         "timeEnd": 1
+    },
+    {
+        "date": "2024-10-03",
+        "name": "Meeting",
+        "timeStart": 0,
+        "timeEnd": 1
+    },
+    {
+        "date": "2024-10-10",
+        "name": "Meeting",
+        "timeStart": 0,
+        "timeEnd": 1
+    },
+    {
+        "date": "2024-10-17",
+        "name": "Meeting",
+        "timeStart": 0,
+        "timeEnd": 1
+    },
+    {
+        "date": "2024-10-24",
+        "name": "Meeting",
+        "timeStart": 0,
+        "timeEnd": 1
+    },
+    {
+        "date": "2024-10-31",
+        "name": "Meeting",
+        "timeStart": 0,
+        "timeEnd": 1
     }
 ]
