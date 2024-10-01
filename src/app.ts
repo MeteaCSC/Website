@@ -20,6 +20,7 @@ function load_md(file: string) {
 
 /*WebGl Loader*/
 app.get("/", (req, res) => {
+  console.log(`[${new Date}] ${req.ip}`);
   res.render("index", {
     titleName: "Home ",
     aboutus: load_md("index.md"),
@@ -48,6 +49,10 @@ app.get("/leaderboards", (req, res) => {
   });
 });
 
+const welcomeString: Buffer = fs.readFileSync(path.join(__dirname, "../static/images/ascii.txt"));
+
 let server = app.listen(7777, () => {
+  console.log(`${new Date}`)
+  console.log(`${welcomeString}`)
   console.log("Started express server on", server.address());
 });
