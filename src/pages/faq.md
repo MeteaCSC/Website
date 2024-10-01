@@ -14,4 +14,4 @@ We currently don't, but we would be happy to set something up if people are inte
 
 ### Q: Will I need to bring a laptop?
 
-It largly depends on what you are doing within the club. There are online versions for a lot of software we use (a great example being [replit](https://replit.com/)) which can be accessed on Chromebook, but not everything.
+It largly depends on what you are doing within the club. There are online versions for a lot of software we use (a great example being [google colab](https://colab.google/)) which can be accessed on Chromebook, but not everything.
