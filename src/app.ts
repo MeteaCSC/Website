@@ -5,6 +5,13 @@ import fs from "fs";
 import path from "path";
 
 const app = express();
+const ARGS = process.argv;
+let PORT: number = 7777;
+
+if (ARGS.length > 2) {
+  PORT = Number(ARGS[2]);
+}
+
 app.use(express.static(path.join(__dirname, "../static")));
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "../src/views"));
@@ -51,7 +58,7 @@ app.get("/leaderboards", (req, res) => {
 
 const welcomeString: Buffer = fs.readFileSync(path.join(__dirname, "../static/images/ascii.txt"));
 
-let server = app.listen(7777, () => {
+let server = app.listen(PORT, () => {
   console.log(`${new Date}`)
   console.log(`${welcomeString}`)
   console.log("Started express server on", server.address());
