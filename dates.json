@@ -40,5 +40,11 @@
         "name": "Meeting",
         "timeStart": 0,
         "timeEnd": 1
+    },
+    {
+        "date": "2024-10-11",
+        "name": "Yearbook Picture",
+        "timeStart": 0,
+        "timeEnd": 1
     }
 ]
