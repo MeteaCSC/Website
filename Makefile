@@ -9,4 +9,4 @@ debug: build
 
 prod: build 
 	cp -R $(SRC)/* ./build/
-	fnode build/app.js 80
+	node build/app.js 80

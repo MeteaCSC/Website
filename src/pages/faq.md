@@ -15,3 +15,7 @@ We currently don't, but we would be happy to set something up if people are inte
 ### Q: Will I need to bring a laptop?
 
 It largly depends on what you are doing within the club. There are online versions for a lot of software we use (a great example being [google colab](https://colab.google/)) which can be accessed on Chromebook, but not everything.
+
+# Getting involved
+
+Unhappy with how the website looks? So are we! If you are curious in helping out talk with one of the leaders or check out our github to get involved.
